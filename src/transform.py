@@ -53,6 +53,8 @@ class Transform:
         """
         rotate 3D vertex around x, y, z axis (euler rotation, local rotation)
         """
+        # rotation is implemented with rotation-matrix.
+        # for more information, look up https://en.wikipedia.org/wiki/Rotation_matrix
         sin_x, cos_x = math.sin(rotation.x), math.cos(rotation.x)
         sin_y, cos_y = math.sin(rotation.y), math.cos(rotation.y)
         sin_z, cos_z = math.sin(rotation.z), math.cos(rotation.z)
