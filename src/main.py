@@ -88,7 +88,7 @@ while running:
 
             intersects = physicsEngine.mesh_intersects_mesh(mesh1, mesh2)
             print(intersects)
-            if intersects:
+            if 1:
                 # update position
                 if keys[pygame.K_a]:
                     obj.move_left(INPUT_MOVE_WEIGHT)

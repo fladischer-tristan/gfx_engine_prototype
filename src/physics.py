@@ -38,13 +38,10 @@ class PhysicsEngine:
     
     def mesh_intersects_mesh(self, mesh1: list[Coordinate3], mesh2: list[Coordinate3]) -> bool:
         """ Return True if mesh1 intersects mesh2 (or vice versa)"""
-        intersection = False
-        
         for v in mesh1:
             if self.vertex_intersects_mesh(v, mesh2):
-                intersection = True
-                break
-        return intersection
+                return True
+        return False
 
 if __name__ == "__main__":
     phyEng = PhysicsEngine()
