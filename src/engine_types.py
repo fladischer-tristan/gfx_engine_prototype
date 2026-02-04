@@ -76,7 +76,7 @@ class Coordinate2(_VecBase):
 
 @dataclass(frozen=True, slots=True)
 class Color:
-    """ Represents RBGA color """
+    """ Represents RGBA color """
     r: int
     g: int
     b: int
