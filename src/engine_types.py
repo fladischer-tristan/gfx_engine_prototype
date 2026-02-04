@@ -74,6 +74,14 @@ class Coordinate2(_VecBase):
     x: float
     y: float
 
+@dataclass(frozen=True, slots=True)
+class Color:
+    """ Represents RBGA color """
+    r: int
+    g: int
+    b: int
+    a: int
+
 Edge3: TypeAlias = Sequence[Coordinate3] # Represents a 3D object's edge
 Face3: TypeAlias = Sequence[Coordinate3] # Represents a 3D object's face
 
